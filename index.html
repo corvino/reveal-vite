@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveal Vite</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Reveal.js + Vite</h1>
+          First slide!
+        </section>
+        <section>
+          <h2>Second Slide!</h2>
+          <h3>Now with fragments</h3>
+
+          <p class="fragment">Fade in</p>
+          <p class="fragment fade-out">Fade out</p>
+          <p class="fragment highlight-red">Highlight red</p>
+          <p class="fragment fade-in-then-out">Fade in, then out</p>
+          <p class="fragment fade-up">Slide up while fading in</p>
+        </section>
+        <section>
+          <pre><code data-trim>
+            (def lazy-fib
+              (concat
+                [0 1]
+                ((fn rfib [a b]
+                    (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+          </code></pre>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## Markdown Slide 1
+            Here is some text.
+            ---
+            ## Markdown Slide 2
+            + List item
+            + Another item
+            + Use bullets to make a firm point!
+            ---
+            ## Markdown Slide 3
+          </textarea>
+        </section>
+        <section>
+          <h1>Another Slide</h1>
+          A slide following markdown.
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
